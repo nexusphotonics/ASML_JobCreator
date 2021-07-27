@@ -133,7 +133,7 @@ Lyr3.set_GlobalAlignment( strategy=ALL )  # choose a global strategy
 Lyr3.expose_Image( HTR, Energy=17.5, Focus=0 )
 
 # Layer 4 - Aligns to ZeroLayer
-Lyr4 = MyJob.Layer( LayerID="HTR" )
+Lyr4 = MyJob.Layer( LayerID="DSE" )
 Lyr4.set_PreAlignment( marks=[E, W] ) # choose 2 marks
 Lyr4.set_GlobalAlignment( strategy=ALL )  # choose a global strategy
 Lyr4.expose_Image( DSE, Energy=17.5, Focus=0 )
@@ -149,7 +149,7 @@ MyJob.Plot.plot_reticles()
 ## Export the text file:
 asml.unset_WARN()   # Turn off warning messages about defaults
 #   overwrite the file. A warning will be printed while doing so.
-MyJob.export('Minh_Job1.txt', overwrite=True) 
+MyJob.export('Minh_Job2.txt', overwrite=True) 
 
 
 print('done.')
