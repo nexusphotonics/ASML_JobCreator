@@ -82,15 +82,15 @@ for r in [1]:
 
 ## To expose on Layer 3:
 # Distribute DicingX in rows across wafer, on top and bottom of cells:
-# for r in [-1]:
+#for r in [-1]:
 #     for c in [-1,0]:
-#     OMET.distribute(cellCR= [c,r] , shiftXY = [, 1.9746])
-#         # OMET.distribute( cellCR=[-5,-5], shiftXY=[-2.00, -2.00] )
+##     OMET.distribute([c,r] )
+##         OMET.distribute( cellCR=[-5,-5], shiftXY=[-2.00, -2.00] )
 #     #end for(c)
 # #end for(r)
 
-OMET.distribute(cellCR= [-1,-1] , shiftXY = [-0.4599, 1.9746])
-OMET.distribute(cellCR= [0,-1] , shiftXY = [-0.4399, 1.9746])
+OMET.distribute(cellCR= [-1,0] , shiftXY = [-0.4599, 1.9746])
+OMET.distribute(cellCR= [0,0] , shiftXY = [-0.4399, 1.9746])
 
 ## To expose on Layer 4:
 # Distribute DicingX in rows across wafer, on top and bottom of cells:
@@ -155,7 +155,7 @@ MyJob.Plot.plot_reticles()
 ## Export the text file:
 asml.unset_WARN()   # Turn off warning messages about defaults
 #   overwrite the file. A warning will be printed while doing so.
-MyJob.export('CBR-LITH-AUG11-INV2', overwrite=True) 
+MyJob.export('CBR-LITH-AUG11-INV.txt', overwrite=True) 
 
 
 print('done.')
