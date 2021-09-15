@@ -13,7 +13,7 @@ START_SECTION GENERAL
    FLAT_EDGE_CLEARANCE                            2.000000
    EDGE_EXCLUSION                                 2.000000
    COVER_MODE                                     "W"
-   NUMBER_DIES                                    1 1
+   NUMBER_DIES                                    50 50
    MIN_NUMBER_DIES                                1
    PLACEMENT_MODE                                 "O"
    MATRIX_SHIFT                                   10.000000 12.000000

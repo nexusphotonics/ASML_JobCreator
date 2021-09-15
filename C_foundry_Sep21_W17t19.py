@@ -32,7 +32,7 @@ import ASML_JobCreator as asml
 print('Running...')
 
 MyJob = asml.Job()
-
+MyJob.set_ExposeEdgeDie()
 MyJob.set_comment("Demo Alignment Job", "", "Exported from Python ASML_JobCreator")
 
 
@@ -86,13 +86,13 @@ OMET.distribute(cellCR= [0,-2] , shiftXY = [0, 2.9])
 #end for(r)
 
 ## Alignment Mark Definition
-E = MyJob.Alignment.Mark("E", "PM", waferXY=[45.0, 0.0])
-EN = MyJob.Alignment.Mark("EN", "PM", waferXY=[45.0, 3.0])
-ES = MyJob.Alignment.Mark("ES", "PM", waferXY=[45.0, -3.0])
+E = MyJob.Alignment.Mark("E", "PM", waferXY=[43.0, 0.0])
+EN = MyJob.Alignment.Mark("EN", "PM", waferXY=[43.0, 5.0])
+ES = MyJob.Alignment.Mark("ES", "PM", waferXY=[43.0, -5.0])
 
-W = MyJob.Alignment.Mark("W", "PM", waferXY=[-45.0, 0.0])
-WN = MyJob.Alignment.Mark("WN", "PM", waferXY=[-45.0, 3.0])
-WS = MyJob.Alignment.Mark("WS", "PM", waferXY=[-45.0, -3.0])
+W = MyJob.Alignment.Mark("W", "PM", waferXY=[-43.0, 0.0])
+WN = MyJob.Alignment.Mark("WN", "PM", waferXY=[-43.0, 5.0])
+WS = MyJob.Alignment.Mark("WS", "PM", waferXY=[-43.0, -5.0])
 WS.set_backup()  # make the mark backup/preferred, for example only
 
 ALL = MyJob.Alignment.Strategy("ALL", marks=[E, EN, ES, W, WN, WS])
@@ -110,9 +110,9 @@ ZeroLyr.expose_Marks(  marks=[E, EN, ES, W, WN, WS], Energy=21, Focus=-0.10  )  
 Lyr1 = MyJob.Layer( LayerID="WG" )
 Lyr1.set_PreAlignment( marks=[E, W] ) # choose 2 marks
 Lyr1.set_GlobalAlignment( strategy=ALL )  # choose a global strategy
-Lyr1.expose_Image( WG1, Energy=14, Focus=0 )
-Lyr1.expose_Image( WG2, Energy=14, Focus=0 )
-Lyr1.expose_Image( OMET, Energy=14, Focus=0 )
+Lyr1.expose_Image( WG1, Energy=11, Focus=0 )
+Lyr1.expose_Image( WG2, Energy=11, Focus=0 )
+Lyr1.expose_Image( OMET, Energy=11, Focus=0 )
 
 # # Layer 2 - Aligns to ZeroLayer
 # Lyr2 = MyJob.Layer( LayerID="WG2" )
@@ -143,7 +143,7 @@ MyJob.Plot.plot_reticles()
 ## Export the text file:
 asml.unset_WARN()   # Turn off warning messages about defaults
 #   overwrite the file. A warning will be printed while doing so.
-MyJob.export('CBR-LITH-W17T19.txt', overwrite=True) 
+MyJob.export('CBR-LITH-W17T19_n.txt', overwrite=True) 
 
 
 print('done.')

@@ -13,7 +13,7 @@ START_SECTION GENERAL
    FLAT_EDGE_CLEARANCE                            2.000000
    EDGE_EXCLUSION                                 2.000000
    COVER_MODE                                     "W"
-   NUMBER_DIES                                    1 1
+   NUMBER_DIES                                    50 50
    MIN_NUMBER_DIES                                1
    PLACEMENT_MODE                                 "O"
    MATRIX_SHIFT                                   10.000000 12.000000
@@ -32,7 +32,7 @@ START_SECTION ALIGNMENT_MARK
    IMAGE_ID                                       "PM"
    MARK_EDGE_CLEARANCE                            "L"
    WAFER_SIDE                                     "A"
-   MARK_LOCATION                                  45.000000 0.000000
+   MARK_LOCATION                                  43.000000 0.000000
 END_SECTION
 
 START_SECTION ALIGNMENT_MARK
@@ -40,7 +40,7 @@ START_SECTION ALIGNMENT_MARK
    IMAGE_ID                                       "PM"
    MARK_EDGE_CLEARANCE                            "L"
    WAFER_SIDE                                     "A"
-   MARK_LOCATION                                  45.000000 3.000000
+   MARK_LOCATION                                  43.000000 5.000000
 END_SECTION
 
 START_SECTION ALIGNMENT_MARK
@@ -48,7 +48,7 @@ START_SECTION ALIGNMENT_MARK
    IMAGE_ID                                       "PM"
    MARK_EDGE_CLEARANCE                            "L"
    WAFER_SIDE                                     "A"
-   MARK_LOCATION                                  45.000000 -3.000000
+   MARK_LOCATION                                  43.000000 -5.000000
 END_SECTION
 
 START_SECTION ALIGNMENT_MARK
@@ -56,7 +56,7 @@ START_SECTION ALIGNMENT_MARK
    IMAGE_ID                                       "PM"
    MARK_EDGE_CLEARANCE                            "L"
    WAFER_SIDE                                     "A"
-   MARK_LOCATION                                  -45.000000 0.000000
+   MARK_LOCATION                                  -43.000000 0.000000
 END_SECTION
 
 START_SECTION ALIGNMENT_MARK
@@ -64,7 +64,7 @@ START_SECTION ALIGNMENT_MARK
    IMAGE_ID                                       "PM"
    MARK_EDGE_CLEARANCE                            "L"
    WAFER_SIDE                                     "A"
-   MARK_LOCATION                                  -45.000000 3.000000
+   MARK_LOCATION                                  -43.000000 5.000000
 END_SECTION
 
 START_SECTION ALIGNMENT_MARK
@@ -72,7 +72,7 @@ START_SECTION ALIGNMENT_MARK
    IMAGE_ID                                       "PM"
    MARK_EDGE_CLEARANCE                            "L"
    WAFER_SIDE                                     "A"
-   MARK_LOCATION                                  -45.000000 -3.000000
+   MARK_LOCATION                                  -43.000000 -5.000000
 END_SECTION
 
 
@@ -572,7 +572,7 @@ START_SECTION RETICLE_DATA
    IMAGE_SHIFT                                    0.000000 0.000000
    MASK_SIZE                                      88.000000 104.000000
    MASK_SHIFT                                     0.000000 0.000000
-   ENERGY_ACTUAL                                  14.000000
+   ENERGY_ACTUAL                                  11.000000
    FOCUS_ACTUAL                                   0.000000
    FOCUS_TILT                                     0.000000 0.000000
    NUMERICAL_APERTURE                             0.570000
@@ -606,7 +606,7 @@ START_SECTION RETICLE_DATA
    IMAGE_SHIFT                                    0.000000 0.000000
    MASK_SIZE                                      88.000000 104.000000
    MASK_SHIFT                                     0.000000 0.000000
-   ENERGY_ACTUAL                                  14.000000
+   ENERGY_ACTUAL                                  11.000000
    FOCUS_ACTUAL                                   0.000000
    FOCUS_TILT                                     0.000000 0.000000
    NUMERICAL_APERTURE                             0.570000
@@ -640,7 +640,7 @@ START_SECTION RETICLE_DATA
    IMAGE_SHIFT                                    0.000000 0.000000
    MASK_SIZE                                      84.000000 76.000000
    MASK_SHIFT                                     0.000000 0.000000
-   ENERGY_ACTUAL                                  14.000000
+   ENERGY_ACTUAL                                  11.000000
    FOCUS_ACTUAL                                   0.000000
    FOCUS_TILT                                     0.000000 0.000000
    NUMERICAL_APERTURE                             0.570000

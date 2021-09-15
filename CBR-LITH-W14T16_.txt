@@ -13,7 +13,7 @@ START_SECTION GENERAL
    FLAT_EDGE_CLEARANCE                            2.000000
    EDGE_EXCLUSION                                 2.000000
    COVER_MODE                                     "W"
-   NUMBER_DIES                                    1 1
+   NUMBER_DIES                                    50 50
    MIN_NUMBER_DIES                                1
    PLACEMENT_MODE                                 "O"
    MATRIX_SHIFT                                   10.000000 12.000000
@@ -203,7 +203,7 @@ START_SECTION IMAGE_DISTRIBUTION
    CELL_SELECTION                                 "-2" "-1"
    DISTRIBUTION_ACTION                            "I"
    OPTIMIZE_ROUTE                                 "N"
-   IMAGE_CELL_SHIFT                               0.000000 0.000100
+   IMAGE_CELL_SHIFT                               -0.004950 0.000100
 END_SECTION
 
 
@@ -213,7 +213,7 @@ START_SECTION IMAGE_DISTRIBUTION
    CELL_SELECTION                                 "0" "-1"
    DISTRIBUTION_ACTION                            "I"
    OPTIMIZE_ROUTE                                 "N"
-   IMAGE_CELL_SHIFT                               0.000000 0.000100
+   IMAGE_CELL_SHIFT                               -0.004950 0.000100
 END_SECTION
 
 
@@ -223,7 +223,7 @@ START_SECTION IMAGE_DISTRIBUTION
    CELL_SELECTION                                 "-1" "-1"
    DISTRIBUTION_ACTION                            "I"
    OPTIMIZE_ROUTE                                 "N"
-   IMAGE_CELL_SHIFT                               0.000000 0.000100
+   IMAGE_CELL_SHIFT                               -0.004950 0.000100
 END_SECTION
 
 
@@ -233,7 +233,7 @@ START_SECTION IMAGE_DISTRIBUTION
    CELL_SELECTION                                 "1" "-1"
    DISTRIBUTION_ACTION                            "I"
    OPTIMIZE_ROUTE                                 "N"
-   IMAGE_CELL_SHIFT                               0.000000 0.000100
+   IMAGE_CELL_SHIFT                               -0.004950 0.000100
 END_SECTION
 
 
@@ -243,7 +243,7 @@ START_SECTION IMAGE_DISTRIBUTION
    CELL_SELECTION                                 "-2" "0"
    DISTRIBUTION_ACTION                            "I"
    OPTIMIZE_ROUTE                                 "N"
-   IMAGE_CELL_SHIFT                               0.000000 -0.000100
+   IMAGE_CELL_SHIFT                               -0.004950 -0.000100
 END_SECTION
 
 
@@ -253,7 +253,7 @@ START_SECTION IMAGE_DISTRIBUTION
    CELL_SELECTION                                 "0" "0"
    DISTRIBUTION_ACTION                            "I"
    OPTIMIZE_ROUTE                                 "N"
-   IMAGE_CELL_SHIFT                               0.000000 -0.000100
+   IMAGE_CELL_SHIFT                               -0.004950 -0.000100
 END_SECTION
 
 
@@ -263,7 +263,7 @@ START_SECTION IMAGE_DISTRIBUTION
    CELL_SELECTION                                 "-1" "0"
    DISTRIBUTION_ACTION                            "I"
    OPTIMIZE_ROUTE                                 "N"
-   IMAGE_CELL_SHIFT                               0.000000 -0.000100
+   IMAGE_CELL_SHIFT                               -0.004950 -0.000100
 END_SECTION
 
 
@@ -273,7 +273,7 @@ START_SECTION IMAGE_DISTRIBUTION
    CELL_SELECTION                                 "1" "0"
    DISTRIBUTION_ACTION                            "I"
    OPTIMIZE_ROUTE                                 "N"
-   IMAGE_CELL_SHIFT                               0.000000 -0.000100
+   IMAGE_CELL_SHIFT                               -0.004950 -0.000100
 END_SECTION
 
 
