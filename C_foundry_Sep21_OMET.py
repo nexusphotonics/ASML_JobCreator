@@ -92,10 +92,10 @@ ZeroLyr.expose_Marks(  marks=[E, EN, ES, W, WN, WS], Energy=21, Focus=-0.10  )  
 
 # # Layer 1 - Aligns to ZeroLayer
 Lyr1 = MyJob.Layer( LayerID="WG" )
-Lyr1.set_PreAlignment( marks=[E, W] ) # choose 2 marks
-Lyr1.set_GlobalAlignment( strategy=ALL )  # choose a global strategy
+# Lyr1.set_PreAlignment( marks=[E, W] ) # choose 2 marks
+# Lyr1.set_GlobalAlignment( strategy=ALL )  # choose a global strategy
 Lyr1.set_CombineWithZeroLayer()
-Lyr1.expose_Image(OMET, Energy=11, Focus=0 )
+Lyr1.expose_Image(OMET, Energy=11, Focus=0)
 
 # # Layer 2 - Aligns to ZeroLayer
 # Lyr2 = MyJob.Layer( LayerID="WG2" )
@@ -126,7 +126,7 @@ MyJob.Plot.plot_reticles()
 ## Export the text file:
 asml.unset_WARN()   # Turn off warning messages about defaults
 #   overwrite the file. A warning will be printed while doing so.
-MyJob.export('CBR-LITH-OMET.txt', overwrite=True) 
+MyJob.export('CBR-LITH-OMET-n.txt', overwrite=True) 
 
 
 print('done.')
